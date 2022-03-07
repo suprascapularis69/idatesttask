@@ -7,81 +7,180 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="product-list-wrapper">
-        <ul class="product-list">
-            <div class="product-card">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
-                    </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
-                    </div>
-                </li>
+    <div class="section-wrapper">
+        <div class="header-wrapper">
+            <p class="adding-text">Добавление товара</p>
+            <div class="select-list">
+                <select name="sort-product" class="sort-product">
+                    <option value="По умолчанию" selected><span>По умолчанию</span></option>
+                    <option value="По наименованию">По названию</option>
+                    <option value="По цене">По цене</option>
+                </select>
             </div>
-            <div class="product-card">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
-                    </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
-                    </div>
-                </li>
+        </div>
+        <div class="content-wrapper">
+            <div class="form-wrapper">
+                <form action="#" method="post">
+                    <label for="name" class="form-label"><span>Наименование товара</span></label>
+                    <input required type="text" name="Product name" placeholder="Введите наименование товара" id="name" class="form-input">
+                    <label for="description" class="form-label">Описание товара</label>
+                    <textarea name="Product description" placeholder="Введите описание товара" id="description" class="form-input big-input"></textarea>
+                    <label for="image" class="form-label"><span>Ссылка на изображение товара</span></label>
+                    <input required type="url" name="Product image link" placeholder="Введите ссылку" id="image" class="form-input">
+                    <label for="price" class="form-label"><span>Цена товара</span></label>
+                    <input required type="number" name="Product price" placeholder="Введите цену" id="price" class="form-input form-last-input">
+                    <button class="form-button" type="submit">Добавить товар</button>
+                </form>
             </div>
-            <div class="product-card right">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+            <div class="product-list-wrapper">
+                <ul class="product-list">
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
                     </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
                     </div>
-                </li>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="product-card">
+                        <li>
+                            <div class="product-card-photo-wrapper">
+                                <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
+                            </div>
+                            <div class="product-card-property">
+                                <p class="product-name">Наименование товара</p>
+                                <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
+                                <p class="product-price">10000 руб.</p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
             </div>
-            <div class="product-card">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
-                    </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
-                    </div>
-                </li>
-            </div>
-            <div class="product-card">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
-                    </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
-                    </div>
-                </li>
-            </div>
-            <div class="product-card right">
-                <li>
-                    <div class="product-card-photo-wrapper">
-                        <img src="img/img1.jpg" width="332" height="200" alt="Фото товара">
-                    </div>
-                    <div class="product-card-property">
-                        <p class="product-name">Наименование товара</p>
-                        <p class="product-description">Довольно-таки интересное описание товара в несколько строк.Довольно-таки интересное описание товара в несколько строк.</p>
-                        <p class="product-price">10000 руб.</p>
-                    </div>
-                </li>
-            </div>
-        </ul>
+        </div>
     </div>
 </body>
 </html>
